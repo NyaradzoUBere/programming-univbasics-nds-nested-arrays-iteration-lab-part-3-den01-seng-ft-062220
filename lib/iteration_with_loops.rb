@@ -6,4 +6,12 @@ def join_nested_strings(src)
   while i < src.length do
     n = 0
     while n < src[i].length do
+      if src[i][n].class == String
+        new_string.push(src[i] [n])
+      end
+      n += 1
+    end
+    i += 1
+  end
+  new_string.join("")
 end
